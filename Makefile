@@ -1,17 +1,15 @@
-########################################################################
-#                                                                      
-#              --- CAEN SpA - Computing Division ---                   
-#                                                                      
-#   CAENVMElib Software Project                                        
-#                                                                      
-#   Created  :  March 2004      (Rel. 1.0)                                             
-#                                                                      
-#   Auth: S. Coluccini     
-#   Edited By: Muhammad Hasib   (09-JAN-2014)    University of Delhi.                                            
-#                                                                      
-########################################################################
+###########################################################################
+# Program:		SCALAR CAEN V830 Data Acquisition Program
+# Discriminator used:	V814
+# OS:			Linux Ubuntu 12.04
+# VME-USB Bridge:	CAEN V1718
+# Prequities:		CAENVME Lib, CAEN USB Driver
+# Auth:			Purnendu Kumar(JRF, University of Delhi).
+# Date:			January 15, 2014.
+# Acknowledgement:	Carlo Tintori(CAEN)
+###########################################################################
 
-EXE	=	Manual_VME
+EXE	=	V830
 
 CC	=	gcc
 
@@ -21,16 +19,15 @@ COPTS	=	-fPIC -DLINUX -Wall
 FLAGS	=	-Wall -s
 #FLAGS	=	-Wall
 
-DEPLIBS	=       -l CAENVME -l ncurses -lc -lm
+DEPLIBS	=       -l CAENVME  -lc -lm
 
 LIBS	=	
 
 INCLUDEDIR =	-I.
 
-OBJS	=	VMEMain.o VME.o console.o
+OBJS	=	V830.o keyb.o
 
-INCLUDES =	CAENVMElib.h CAENVMEtypes.h CAENVMEoslib.h console.h
-
+INCLUDES =	keyb.h V830.h
 #########################################################################
 
 all	:	$(EXE)
