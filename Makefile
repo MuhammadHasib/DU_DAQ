@@ -4,7 +4,7 @@
 # OS:			Linux Ubuntu 12.04
 # VME-USB Bridge:	CAEN V1718
 # Prequities:		CAENVME Lib, CAEN USB Driver
-# Auth:			Purnendu Kumar(JRF, University of Delhi).
+# Auth:			Muhammad Hasib (University of Delhi).
 # Date:			January 15, 2014.
 # Acknowledgement:	Carlo Tintori(CAEN)
 ###########################################################################
