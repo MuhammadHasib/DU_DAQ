@@ -1,6 +1,6 @@
 /* ###########################################################################
 * Program:		SCALAR CAEN V830 Data Acquisition Program
-*Discriminator used:	V814
+* Discriminator used:	V814
 * OS:			Linux Ubuntu 12.04
 * VME-USB Bridge:	CAEN V1718
 * Prequities:		CAENVME Lib, CAEN USB Driver
